@@ -1,0 +1,13 @@
+canvas {
+  width: 100%;
+  height: auto;
+}
+
+.tooltip {
+  position: absolute;
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 3px;
+  font-size: 12px;
+}

@@ -1,0 +1,19 @@
+<form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+  <mat-form-field>
+    <mat-label>Date</mat-label>
+    <input matInput [matDatepicker]="picker" formControlName="date" />
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Input Field</mat-label>
+    <input matInput formControlName="inputField" />
+  </mat-form-field>
+
+  <button mat-raised-button type="submit">Submit</button>
+</form>
+
+<hr />
+
+<app-heatmap [data]="heatmapData"></app-heatmap>
